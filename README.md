@@ -7,6 +7,23 @@
 3.	Настроить редис кластер на 3х нодах с отказоустойчивостью, затюнить таймоуты.
 4.	Предоставить отчет.
 
+## Скачивание
+Ubuntu 21.10
+#### redis-cli
+```
+sudo apt install redis-server
+```
+#### redisinsight
+скачиваем по [ссылке](https://download.redisinsight.redis.com/latest/RedisInsight-v2-linux-x86_64.AppImage)
+```
+chmod a+x RedisInsight-preview-linux.AppImage
+./RedisInsight-preview-linux.AppImage
+```
+И создаём db в RedisInsight
+
+
+![](https://github.com/FAnastasiaF/redis/blob/main/db.png)
+
 ## JSON
 
 Я взяла, первую треть из [Jeopardy Dataset](https://www.reddit.com/r/datasets/comments/1uyd0t/200000_jeopardy_questions_in_a_json_file/) —  216,930 записей «вопрос-ответ» из телевизионной игры(~70МБ).
@@ -70,3 +87,6 @@
 2  | hset  | 0.0040 сек
 3  | zset  | 0.0041 сек
 4  | cтрока  | 0.0441 сек
+
+## Редис кластер
+
